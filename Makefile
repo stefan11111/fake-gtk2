@@ -20,7 +20,7 @@ install: libgtk-x11-2.0.so.0 libgdk-x11-2.0.so.0
 	mkdir -p ${DESTDIR}/usr/lib64/pkgconfig
 	cp -f pc/* ${DESTDIR}/usr/lib64/pkgconfig
 	mkdir -p /usr/include/gtk-2.0/gtk
-	cp -f headers/* /usr/include/gtk-2.0/gtk
+	cp -rf headers/* /usr/include/gtk-2.0
 uninstall:
 	rm -f ${DESTDIR}/usr/lib64/libgtk-x11-2.0.so.0 ${DESTDIR}/usr/lib64/libgdk-x11-2.0.so.0
 
